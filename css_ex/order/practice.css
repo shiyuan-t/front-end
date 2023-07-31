@@ -1,0 +1,15 @@
+p{
+    color: blueviolet;
+}
+
+#text-color{
+    color: bisque;
+}
+
+.list-color{
+    color: aquamarine;
+}
+
+h2,#color1,.color2{
+    color: coral;
+}
