@@ -1,0 +1,80 @@
+html{
+    font-size: 1.2rem;
+}
+body{
+    color: #2b2a27;
+    font-family: "Helvetica Neue","Arial","Hiragino Sans","Meiryo",sans-serif;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: #2b2a27;
+}
+#mainvisual img{
+    width: 100%;
+    height: 100vh;
+    /*トリミング*/
+    object-fit: cover;
+    /*横は中央、縦はトップ*/
+    object-position: center top;
+    margin-bottom: 80px;
+}
+.text{
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 80px;
+}
+.text .site-title{
+    margin-bottom: 20px;
+}
+.text .btn{
+    /*aタグに幅と高さを持たせる*/
+    display: inline-block;
+    border: solid 1px #2b2a27;
+    font-size: 0.875rem;
+    /*ボタンのサイズを調整*/
+    padding: 18px 60px;
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+    margin-bottom: 60px;
+}
+.flex li{
+    /*widthの値が三等分になるよう計算する*/
+    width: calc(100%/3);
+}
+.flex li img{
+    width: 100%;
+    height: 500px;
+    /*高さを固定したまま画面幅に合わせて画像を伸縮させる*/
+    object-fit: cover;
+    /*画像の下にできる隙間を消す*/
+    vertical-align: bottom;
+}
+#footer{
+    font-size: 0.74rem;
+    padding: 20px;
+    text-align: center;
+}
+#footer .sns{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#footer .sns li{
+    margin: 0 10px;
+}
+@media screen and (max-width:834px){
+ .flex{
+    /*縦並びにする*/
+    flex-direction: column;
+ }
+ .flex li{
+    width: 100%;
+ }   
+}
