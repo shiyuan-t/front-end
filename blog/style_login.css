@@ -34,29 +34,3 @@ p{
     display: flex;
     justify-content: center;
 }
-/* --- 背景が上下左右に動くのBOX定義 ------------------------ */
-.box {
-    position   : relative;
-    max-width  : 500px;                   /* 背景の大きさに変更 */
-    height     : 200px;
-    margin     : auto;
-    background : #ffffff;
-  }
-  
-  /* --- 背景が上下左右に動くの背景定義 ----------------------- */
-  .box::before {
-    display    : block;
-    content    : "";
-    position   : absolute;
-    top        : 0;
-    right      : 0;
-    bottom     : 0;
-    left       : 0;
-    background-image : url(sora.png);  /* 使用する画像を指定 */
-    animation  : bgAnime 15s linear infinite;
-  }
-  @keyframes bgAnime {
-     0% { background-position: 0 0 }
-                  /* 使用する画像幅と画像高さのpxに変更ください */
-   100% { background-position: 500px -332px }
-  }
